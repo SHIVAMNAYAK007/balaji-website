@@ -6,194 +6,197 @@
   <title>Balaji Content Writing & Publications — Fast Publication Assistance</title>
   <meta name="description" content="Balaji Content Writing & Publications — End-to-end research paper writing, editing and fast publication assistance for Scopus, UGC & IEEE journals. Chat on WhatsApp." />
   <link rel="icon" href="assets/logo.png" />
-  <link rel="stylesheet" href="css/styles.css" />
-</head>
-<body>
 
-  <!-- NAV -->
-  <header class="site-header">
-    <div class="container nav-wrap">
-      <a class="brand" href="#">
-        <img src="assets/logo.png" alt="Balaji Publications logo" class="logo"/>
+  <!-- ✅ Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- ✅ Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <style>
+    :root {
+      --brand-maroon: #800000;
+      --brand-gold: #FFD700;
+    }
+
+    .brand-text {
+      color: var(--brand-maroon);
+      font-weight: 700;
+      font-size: 1.2rem;
+    }
+
+    .btn-primary {
+      background-color: var(--brand-maroon);
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+
+    .btn-primary:hover {
+      background-color: #a00000;
+    }
+
+    .btn-outline {
+      border: 2px solid var(--brand-maroon);
+      color: var(--brand-maroon);
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .btn-outline:hover {
+      background-color: var(--brand-maroon);
+      color: white;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: white;
+      padding: 12px 14px;
+      border-radius: 50%;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+    }
+
+    .wh-icon {
+      width: 28px;
+      height: 28px;
+    }
+  </style>
+</head>
+
+<body class="font-sans text-gray-800">
+
+  <!-- ✅ NAV -->
+  <header class="bg-white shadow sticky top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <a href="#" class="flex items-center space-x-2">
+        <img src="assets/logo.png" alt="Balaji Publications logo" class="w-10 h-10" />
         <span class="brand-text">Balaji Content Writing & Publications</span>
       </a>
-
-      <nav class="nav">
+      <nav class="hidden md:flex space-x-6 font-medium">
         <a href="#services">Services</a>
         <a href="#process">Process</a>
         <a href="#testimonials">Testimonials</a>
         <a href="#journals">Journals</a>
         <a href="#contact" class="btn-outline">Contact</a>
       </nav>
-
-      <button id="menuToggle" aria-label="Toggle menu">☰</button>
+      <button id="menuToggle" class="md:hidden text-2xl">☰</button>
     </div>
   </header>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="container hero-grid">
-      <div class="hero-left">
-        <h1>Publish your research — faster, ethically, and with confidence.</h1>
-        <p class="lead">End-to-end publication assistance for research scholars, academicians and professionals. Writing • Editing • Journal Selection • Fast-track submission.</p>
-        <div class="hero-ctas">
+  <!-- ✅ HERO -->
+  <section class="bg-gradient-to-r from-[var(--brand-maroon)] to-[var(--brand-gold)] text-white py-16">
+    <div class="container mx-auto grid md:grid-cols-2 gap-10 items-center px-6">
+      <div>
+        <h1 class="text-3xl md:text-5xl font-bold leading-tight mb-4">Publish your research — faster, ethically, and with confidence.</h1>
+        <p class="text-lg mb-6">End-to-end publication assistance for research scholars, academicians and professionals. Writing • Editing • Journal Selection • Fast-track submission.</p>
+        <div class="space-x-4">
           <a class="btn-primary" href="https://wa.me/919516732427?text=Hi%20Balaji%20Publications,%20I%20need%20help%20with%20my%20paper">Chat on WhatsApp</a>
           <a class="btn-outline" href="#contact">Get Free Consultation</a>
         </div>
-
-        <ul class="hero-features">
+        <ul class="mt-6 space-y-2">
           <li>✅ Fast-track publication partnerships</li>
           <li>✅ Plagiarism cleaning & formatting</li>
           <li>✅ Transparent pricing & timelines</li>
         </ul>
       </div>
 
-      <div class="hero-right">
-        <img src="assets/hero.jpg" alt="Researchers working" class="hero-image"/>
+      <div>
+        <img src="assets/hero.jpg" alt="Researchers working" class="rounded-2xl shadow-lg" />
       </div>
     </div>
   </section>
 
-  <!-- SERVICES -->
-  <section id="services" class="section">
-    <div class="container">
-      <h2 class="section-title">Our Services</h2>
-      <p class="section-sub">Comprehensive publication support — choose the level of help you need.</p>
-
-      <div class="grid cards">
-        <article class="card">
-          <h3>Research Paper Writing & Editing</h3>
+  <!-- ✅ SERVICES -->
+  <section id="services" class="py-16 bg-gray-50">
+    <div class="container mx-auto text-center px-6">
+      <h2 class="text-3xl font-bold text-[var(--brand-maroon)] mb-4">Our Services</h2>
+      <p class="text-gray-600 mb-10">Comprehensive publication support — choose the level of help you need.</p>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+          <h3 class="font-semibold text-lg mb-2">Research Paper Writing & Editing</h3>
           <p>Professional academic writing and rigorous editing to make manuscripts publication-ready.</p>
-        </article>
-
-        <article class="card">
-          <h3>Journal Selection & Submission</h3>
+        </div>
+        <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+          <h3 class="font-semibold text-lg mb-2">Journal Selection & Submission</h3>
           <p>Targeted journal matching (Scopus / UGC / IEEE) and submission handling with follow-up.</p>
-        </article>
-
-        <article class="card">
-          <h3>Plagiarism Check & Reduction</h3>
+        </div>
+        <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+          <h3 class="font-semibold text-lg mb-2">Plagiarism Check & Reduction</h3>
           <p>Plagiarism analysis and rewriting to ensure originality and ethical compliance.</p>
-        </article>
-
-        <article class="card">
-          <h3>Thesis & Dissertation Support</h3>
+        </div>
+        <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+          <h3 class="font-semibold text-lg mb-2">Thesis & Dissertation Support</h3>
           <p>Formatting, chapter editing, references and submission support for thesis/dissertations.</p>
-        </article>
-
-        <article class="card">
-          <h3>Fast-track Publication</h3>
+        </div>
+        <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+          <h3 class="font-semibold text-lg mb-2">Fast-track Publication</h3>
           <p>Priority handling and partner-journal routes for authors needing quick publication.</p>
-        </article>
-
-        <article class="card">
-          <h3>Conference & Book Publication</h3>
+        </div>
+        <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+          <h3 class="font-semibold text-lg mb-2">Conference & Book Publication</h3>
           <p>Conference paper writing, proceedings submission and book/eBook publication assistance.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROCESS -->
-  <section id="process" class="section alt">
-    <div class="container">
-      <h2 class="section-title">Our 5-step Process</h2>
-      <div class="process-grid">
-        <div class="process-step">
-          <div class="step-number">1</div><h4>Consultation</h4><p>We understand scope, target journal and deadlines.</p>
-        </div>
-        <div class="process-step">
-          <div class="step-number">2</div><h4>Manuscript Prep</h4><p>Editing, formatting, reference and figure checks.</p>
-        </div>
-        <div class="process-step">
-          <div class="step-number">3</div><h4>Journal Matching</h4><p>Shortlist suitable journals and discuss options.</p>
-        </div>
-        <div class="process-step">
-          <div class="step-number">4</div><h4>Submission & Follow-up</h4><p>We submit and liaise with editors and reviewers.</p>
-        </div>
-        <div class="process-step">
-          <div class="step-number">5</div><h4>Publication</h4><p>Acceptance handling, proofs and final publication assistance.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- TESTIMONIALS -->
-  <section id="testimonials" class="section">
-    <div class="container">
-      <h2 class="section-title">What authors say</h2>
-      <div class="testimonials">
-        <blockquote class="testimonial">
-          <p>“Balaji Publications helped me publish in 12 days. Professional and responsive.”</p>
-          <cite>— Dr. Meena Sharma</cite>
-        </blockquote>
-
-        <blockquote class="testimonial">
-          <p>“Their editorial team improved the manuscript quality and guided us through the submission.”</p>
-          <cite>— Prof. R. K. Singh</cite>
-        </blockquote>
-      </div>
-    </div>
-  </section>
-
-  <!-- JOURNALS (starter) -->
-  <section id="journals" class="section alt">
-    <div class="container">
-      <h2 class="section-title">Partner & Recommended Journals</h2>
-      <p class="section-sub">We collaborate with multiple indexed journals — contact us for the latest list or special priority channels.</p>
-      <div class="grid journal-list">
-        <div class="journal-card">Scopus / UGC / IEEE journals — discipline-specific</div>
-        <div class="journal-card">Open-access journals with fast decisions</div>
-        <div class="journal-card">Conference proceedings & special issues</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <footer id="contact" class="site-footer">
-    <div class="container footer-grid">
+  <!-- ✅ CONTACT -->
+  <footer id="contact" class="bg-[var(--brand-maroon)] text-white py-12">
+    <div class="container mx-auto grid md:grid-cols-3 gap-10 px-6">
       <div>
-        <h3>Get in touch</h3>
-        <p>Ready to publish? Send us a message on WhatsApp or fill the short form.</p>
-        <p><strong>WhatsApp:</strong> <a href="https://wa.me/911234567890?text=Hi%20Balaji%20Publications">+91 9516732427</a></p>
-        <p><strong>Email:</strong> <a href="mailto:balajipublicationsservices@gmail.com">balajipublicationsservices@gmail.com</a></p>
+        <h3 class="text-xl font-semibold mb-2 text-[var(--brand-gold)]">Get in touch</h3>
+        <p>Ready to publish? Send us a message on WhatsApp or fill the form.</p>
+        <p class="mt-3"><strong>WhatsApp:</strong> <a href="https://wa.me/919516732427" class="underline text-[var(--brand-gold)]">+91 9516732427</a></p>
+        <p><strong>Email:</strong> <a href="mailto:balajipublicationsservices@gmail.com" class="underline text-[var(--brand-gold)]">balajipublicationsservices@gmail.com</a></p>
       </div>
 
       <div>
-        <h3>Quick Links</h3>
-        <ul class="footer-links">
-          <li><a href="#services">Services</a></li>
-          <li><a href="#process">Process</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
-          <li><a href="#journals">Journals</a></li>
+        <h3 class="text-xl font-semibold mb-2 text-[var(--brand-gold)]">Quick Links</h3>
+        <ul class="space-y-2">
+          <li><a href="#services" class="hover:text-[var(--brand-gold)]">Services</a></li>
+          <li><a href="#process" class="hover:text-[var(--brand-gold)]">Process</a></li>
+          <li><a href="#testimonials" class="hover:text-[var(--brand-gold)]">Testimonials</a></li>
+          <li><a href="#journals" class="hover:text-[var(--brand-gold)]">Journals</a></li>
         </ul>
       </div>
 
       <div>
-        <h3>Contact Form</h3>
-        <!-- Using Formspree as a free form endpoint (replace action with your form endpoint or use Formspree) -->
-        <form id="contactForm" action="https://formspree.io/f/yourformid" method="POST">
-          <label for="name">Name</label>
-          <input id="name" name="name" required />
-          <label for="email">Email</label>
-          <input id="email" type="email" name="email" required />
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="3" required></textarea>
-          <button type="submit" class="btn-primary">Send Message</button>
+        <h3 class="text-xl font-semibold mb-2 text-[var(--brand-gold)]">Contact Form</h3>
+        <form id="contactForm" action="https://formspree.io/f/xrbrzogg" method="POST" class="space-y-3">
+          <input id="name" name="name" placeholder="Name" required class="w-full p-2 rounded text-black" />
+          <input id="email" type="email" name="email" placeholder="Email" required class="w-full p-2 rounded text-black" />
+          <textarea id="message" name="message" rows="3" placeholder="Message" required class="w-full p-2 rounded text-black"></textarea>
+          <button type="submit" class="btn-primary w-full">Send Message</button>
         </form>
       </div>
     </div>
 
-    <div class="footer-bottom">
-      <p>© <span id="year"></span> Balaji Content Writing & Publications. All rights reserved.</p>
+    <div class="text-center mt-8 text-sm">
+      © <span id="year"></span> Balaji Content Writing & Publications. All rights reserved.
     </div>
   </footer>
 
-  <!-- WhatsApp Floating Button -->
-  <a class="whatsapp-float" href="https://wa.me/911234567890?text=Hello%20Balaji%20Publications,%20I%20need%20help" target="_blank" aria-label="Chat on WhatsApp">
-    <svg viewBox="0 0 24 24" class="wh-icon" aria-hidden="true"><path fill="currentColor" d="M20.5 3.5..."/></svg>
+  <!-- ✅ WhatsApp Floating Button -->
+  <a class="whatsapp-float" href="https://wa.me/919516732427?text=Hello%20Balaji%20Publications,%20I%20need%20help" target="_blank" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" class="wh-icon" aria-hidden="true">
+      <path fill="currentColor" d="M12 2C6.48 2 2 6.48...Z" />
+    </svg>
   </a>
 
-  <script src="js/scripts.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
